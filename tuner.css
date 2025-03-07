@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    background-image: url(''); /* Will be set dynamically by JS */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.tuner-container {
+    text-align: center;
+    padding: 30px;
+    max-width: 400px;
+    margin-top: 50px;
+    background: rgba(240, 240, 240, 0.8); /* Light gray, semi-transparent */
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    width: 100%;
+    max-width: 400px; /* Match max-width of tuner-container */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.fretboard-link {
+    margin: 5px 0; /* Reduced margin to keep it close to logo */
+}
+
+.fretboard-link a {
+    font-size: 1.1em;
+    font-weight: bold;
+    color: #4CAF50;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.fretboard-link a:hover {
+    color: #45a049;
+}
+
+.fretboard-tagline {
+    font-size: 1em;
+    color: #666;
+    font-style: italic;
+    margin: 5px 0; /* Reduced margin to keep it close to link */
+}
+
+.tagline {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.string-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px; /* Increased from 5px to add more padding above Buy Me a Coffee */
+    position: relative;
+    width: 100%;
+}
+
+.string {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #333;
+    background: rgba(255, 255, 255, 0.8);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.1s;
+}
+
+.string:hover {
+    background: #4CAF50;
+    color: #fff;
+    transform: scale(1.1);
+}
+
+.string.active {
+    background: #4CAF50;
+    color: #fff;
+}
+
+.headstock {
+    position: relative;
+    width: 380px; /* Increased from 350px */
+    height: auto;
+    display: inline-block;
+    margin-top: 2px; /* Reduced from 5px to bring closer to Buy Me a Coffee */
+}
+
+.headstock-image {
+    width: 100%;
+    height: auto;
+}
+
+.buy-me-a-coffee {
+    margin: 5px 0; /* Keep minimal vertical margin */
+    padding: 5px; /* Add padding to create a box effect */
+    display: inline-block; /* Ensure it wraps the image properly */
+}
+
+.coffee-image {
+    height: 40px; /* Increased from 30px to make the box larger */
+    width: auto;
+}
+
+#stopButton {
+    padding: 10px 20px;
+    font-size: 1em;
+    background: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#stopButton:hover {
+    background: #45a049;
+}
